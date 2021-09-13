@@ -1,0 +1,3 @@
+-f SK_Vanity_ArmorDriller006_FP.uasset
+-n -r /Game/Character/Vanity2/Armor/SK_Vanity_ArmorDriller002_FP /Game/Character/Vanity2/Armor/SK_Vanity_ArmorDriller006_FP
+-n -r SK_Vanity_ArmorDriller002_FP SK_Vanity_ArmorDriller006_FP
