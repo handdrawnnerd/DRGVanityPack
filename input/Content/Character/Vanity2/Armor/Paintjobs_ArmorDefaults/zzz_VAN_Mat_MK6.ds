@@ -1,0 +1,5 @@
+-f VAN_ArmorMat_Driller_MK6Default.uasset
+-n -r /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_Driller_MK2Default /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_Driller_MK6Default
+-n -r /Game/Character/Vanity2/Armor/VAN_ArmorDriller_MK2 /Game/Character/Vanity2/Armor/VAN_ArmorDriller_MK6
+-n -r VAN_ArmorDriller_MK2 VAN_ArmorDriller_MK6
+-n -r VAN_ArmorMat_Driller_MK2Default VAN_ArmorMat_Driller_MK6Default
