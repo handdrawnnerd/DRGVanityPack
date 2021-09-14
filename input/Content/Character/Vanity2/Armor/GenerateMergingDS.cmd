@@ -3,7 +3,7 @@
 echo File VanitySet_%ClassName%.uasset
 
 echo Name -a /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default
-echo Name a VAN_ArmorMat_%ArmorName%_Default
+echo Name -a VAN_ArmorMat_%ArmorName%_Default
 
 echo Name -a /Game/Character/Vanity2/Armor/VAN_%ArmorName%
 echo Name -a VAN_%ArmorName%
