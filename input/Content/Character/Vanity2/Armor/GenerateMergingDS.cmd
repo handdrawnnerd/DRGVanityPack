@@ -9,7 +9,7 @@ echo Name -a /Game/Character/Vanity2/Armor/VAN_%ArmorName%
 echo Name -a VAN_%ArmorName%
 
 echo Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default 0
-echo import -a /Script/FSD ArmorMaterialVanityItem /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default 0 VAN_ArmorMat_%ArmorName%_Default 0
+echo Import -a /Script/FSD ArmorMaterialVanityItem /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default 0 VAN_ArmorMat_%ArmorName%_Default 0
 
 echo Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Armor/VAN_%ArmorName% 0
 echo Import -a /Script/FSD ArmorVanityItem /Game/Character/Vanity2/Armor/VAN_%ArmorName% 0 VAN_%ArmorName% 0
