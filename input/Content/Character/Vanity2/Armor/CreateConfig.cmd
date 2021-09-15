@@ -1,0 +1,1 @@
+CALL GenerateConfig.cmd > DVP_DAUM_AUTOMATION_Armour_Generation_config.cmd

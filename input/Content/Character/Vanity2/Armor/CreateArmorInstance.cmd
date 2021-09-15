@@ -1,6 +1,6 @@
 @echo off
 
-CALL DVP_DAUM_AUTOMATION_New_Armor_Instance_Config
+CALL DVP_DAUM_AUTOMATION_Armour_Generation_config.cmd
 
 COPY SK_Vanity_ArmorDriller002.uasset SK_Vanity_%ArmorName%.uasset
 COPY SK_Vanity_ArmorDriller002.uexp SK_Vanity_%ArmorName%.uexp
