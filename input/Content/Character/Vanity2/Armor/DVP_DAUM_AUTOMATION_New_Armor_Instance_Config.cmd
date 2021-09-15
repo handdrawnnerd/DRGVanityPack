@@ -26,3 +26,7 @@ SET UserVisibleDescGUID=0123456789ABCDEF0123456789ABCDEE
 REM And a yet another place for a random GUID
 
 SET ProgressionGUID=0123456789ABCDEF0123456789ABCDEF
+
+REM The next GUID is used for the default paintjob generated for the new armour
+
+SET PJProgressionGUID=0123456789ABCDEF0123456789ABCDE0

@@ -57,3 +57,5 @@ echo Name -r VAN_ArmorMat_Driller_MK2Default VAN_ArmorMat_%ArmorName%_Default
 
 echo Name -r /Game/Character/Vanity2/Armor/VAN_ArmorDriller_MK2 /Game/Character/Vanity2/Armor/VAN_%ArmorName%
 echo Name -r VAN_ArmorDriller_MK2 VAN_%ArmorName%
+
+echo ExportChange -r -i 1 SaveGameID/GUID/1 %PJProgressionGUID%
