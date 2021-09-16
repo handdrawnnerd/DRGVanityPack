@@ -3,6 +3,7 @@
 echo REM NEVER USE SPACES IN THE 2 NAMES BELOW!
 echo REM Leave no space after "="
 echo REM Example: SET ArmorName=BarrelArmorDriller
+echo REM Valid Class Names: Driller, Scout, Gunner, Engineer
 
 echo SET ArmorName=BarrelArmorDriller
 echo SET ClassName=Driller
