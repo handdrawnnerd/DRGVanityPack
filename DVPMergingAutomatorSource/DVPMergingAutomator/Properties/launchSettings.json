@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DVPMergingAutomator": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\001_ALEX\\Desktop\\Test\\input\\Content\\Character\\Vanity2\\_VanitySets"
+    }
+  }
+}

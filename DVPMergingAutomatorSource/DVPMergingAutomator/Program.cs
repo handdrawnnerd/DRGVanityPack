@@ -13,14 +13,20 @@ namespace DVPMergingAutomator
 
         static void Main(string[] args)
         {
-            IEnumerable<string> scriptsToRun = Directory.GetFiles(".", "*.ds").Where(x => ! GetRanScripts().Contains(x));
+            string[] allScripts = Directory.GetFiles(".", "*.ds");
+
+            IEnumerable<string> ranScripts = GetRanScripts();
+
+            IEnumerable<string> scriptsToRun = allScripts.Where(x => ! ranScripts.Contains(x));
 
             foreach (string scriptPath in scriptsToRun)
             {
                 Execute(scriptPath);
             }
 
-            File.WriteAllLines(ranScriptsRosterFileName, GetRanScripts().Concat(scriptsToRun));
+            List<string> newRanScripts = new List<string>(ranScripts.Concat(scriptsToRun));
+
+            File.WriteAllLines(ranScriptsRosterFileName, newRanScripts);         // technically these should be just all .ds files in the folder
         }
 
         static IEnumerable<string> GetRanScripts()
