@@ -1,0 +1,13 @@
+File VanitySet_Scout.uasset
+Name -a /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_BarrelArmorScout_Default
+Name -a VAN_ArmorMat_BarrelArmorScout_Default
+Name -a /Game/Character/Vanity2/Armor/VAN_BarrelArmorScout
+Name -a VAN_BarrelArmorScout
+Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_BarrelArmorScout_Default 0
+Import -a /Script/FSD ArmorMaterialVanityItem /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_BarrelArmorScout_Default 0 VAN_ArmorMat_BarrelArmorScout_Default 0
+Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Armor/VAN_BarrelArmorScout 0
+Import -a /Script/FSD ArmorVanityItem /Game/Character/Vanity2/Armor/VAN_BarrelArmorScout 0 VAN_BarrelArmorScout 0
+ExportChange -a -i 1 ArmorItems/Array/0 ""
+ExportChange -r -i 1 ArmorItems/Array/0/-1/ObjectIndex/0 "VAN_BarrelArmorScout 0"
+ExportChange -a -i 1 ArmorMaterialItems/Array/0 ""
+ExportChange -r -i 1 ArmorMaterialItems/Array/0/-1/ObjectIndex/0 "VAN_ArmorMat_BarrelArmorScout_Default 0"
