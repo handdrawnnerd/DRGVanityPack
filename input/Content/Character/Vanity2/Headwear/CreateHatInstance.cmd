@@ -1,6 +1,6 @@
 @echo off
 
-CALL DVP_DAUM_AUTOMATION_Armour_Generation_config.cmd
+CALL DVP_DAUM_AUTOMATION_Hat_Generation_config.cmd
 
 COPY SK_Vanity_Headwear_HelmetFullface01_CorporateMarine.uasset SK_Vanity_Headwear_%InternalHatName%.uasset
 COPY SK_Vanity_Headwear_HelmetFullface01_CorporateMarine.uexp SK_Vanity_Headwear_%InternalHatName%.uexp
