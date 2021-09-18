@@ -1,1 +1,0 @@
-CALL GenerateConfig.cmd > DVP_DAUM_AUTOMATION_Hat_Generation_config.cmd
