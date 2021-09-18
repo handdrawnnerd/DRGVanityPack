@@ -1,0 +1,4 @@
+.\ArmorMerging_BarrelArmorDriller.ds
+.\ArmorMerging_BarrelArmorEngineer.ds
+.\ArmorMerging_BarrelArmorGunner.ds
+.\ArmorMerging_BarrelArmorScout.ds
