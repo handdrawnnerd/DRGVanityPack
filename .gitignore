@@ -1,2 +1,5 @@
 *DVP_DAUM_AUTOMATION*
 *.daum
+DVPMergingAutomatorSource/.vs*
+DVPMergingAutomatorSource/DVPMergingAutomator/bin*
+DVPMergingAutomatorSource/DVPMergingAutomator/obj*
