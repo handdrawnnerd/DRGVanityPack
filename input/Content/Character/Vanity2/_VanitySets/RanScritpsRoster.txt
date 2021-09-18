@@ -2,3 +2,7 @@
 .\ArmorMerging_BarrelArmorEngineer.ds
 .\ArmorMerging_BarrelArmorGunner.ds
 .\ArmorMerging_BarrelArmorScout.ds
+.\ArmorMerging_StickmanArmorDriller.ds
+.\ArmorMerging_StickmanArmorEngineer.ds
+.\ArmorMerging_StickmanArmorGunner.ds
+.\ArmorMerging_StickmanArmorScout.ds
