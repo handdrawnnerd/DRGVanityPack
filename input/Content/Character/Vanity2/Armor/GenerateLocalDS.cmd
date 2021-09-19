@@ -72,9 +72,43 @@ echo Name -a RES_EMBED_Jadiz
 echo Name -a /Game/GameElements/Resources/Veins/RES_VEIN_Croppa
 echo Name -a RES_VEIN_Croppa
 
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Carved/Bismor/RES_CARVED_Bismor 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Carved/Magnite/RES_CARVED_Magnite 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Carved/Umanite/RES_CARVED_Umanite 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Embedded/EnorPearl/RES_EMBED_Enor 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Embedded/Gems/RES_EMBED_Jadiz 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Veins/RES_VEIN_Croppa 0
+
+echo Import -a /Script/FSD CarvedResourceData /Game/GameElements/Resources/Carved/Bismor/RES_CARVED_Bismor 0 RES_CARVED_Bismor 0
+echo Import -a /Script/FSD CarvedResourceData /Game/GameElements/Resources/Carved/Magnite/RES_CARVED_Magnite 0 RES_CARVED_Magnite 0
+echo Import -a /Script/FSD CarvedResourceData /Game/GameElements/Resources/Carved/Umanite/RES_CARVED_Umanite 0 RES_CARVED_Umanite 0
+echo Import -a /Script/FSD GemResourceData /Game/GameElements/Resources/Embedded/EnorPearl/RES_EMBED_Enor 0 RES_EMBED_Enor 0
+echo Import -a /Script/FSD GemResourceData /Game/GameElements/Resources/Embedded/Gems/RES_EMBED_Jadiz 0 RES_EMBED_Jadiz 0
+echo Import -a /Script/FSD VeinResourceData /Game/GameElements/Resources/Veins/RES_VEIN_Croppa 0 RES_VEIN_Croppa 0
+
+
 echo ExportChange -r -i 1 CraftingCreditsCost/Float32/0 %CraftingCreditsCost%
 
 echo ExportChange -a -i 1 "" "CraftingCost MapProperty ObjectProperty FloatProperty"
+echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+
+echo ExportChange -r -i 1 CraftingCost/Array/1/0/ObjectIndex "RES_CARVED_Bismor 0"
+echo ExportChange -r -i 1 CraftingCost/Array/1/0/Float32 %CostBismor%
+echo ExportChange -r -i 1 CraftingCost/Array/1/1/ObjectIndex "RES_CARVED_Magnite 0"
+echo ExportChange -r -i 1 CraftingCost/Array/1/1/Float32 %CostMagnite%
+echo ExportChange -r -i 1 CraftingCost/Array/1/2/ObjectIndex "RES_CARVED_Umanite 0"
+echo ExportChange -r -i 1 CraftingCost/Array/1/2/Float32 %CostUmanite%
+echo ExportChange -r -i 1 CraftingCost/Array/1/3/ObjectIndex "RES_EMBED_Enor 0"
+echo ExportChange -r -i 1 CraftingCost/Array/1/3/Float32 %CostEnorPearl%
+echo ExportChange -r -i 1 CraftingCost/Array/1/4/ObjectIndex "RES_EMBED_Jadiz 0"
+echo ExportChange -r -i 1 CraftingCost/Array/1/4/Float32 %CostJadiz%
+echo ExportChange -r -i 1 CraftingCost/Array/1/5/ObjectIndex "RES_VEIN_Croppa 0"
+echo ExportChange -r -i 1 CraftingCost/Array/1/5/Float32 %CostCroppa%
 
 
 
