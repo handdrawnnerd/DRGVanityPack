@@ -96,18 +96,30 @@ echo ExportChange -a -i 1 CraftingCost/Array/1 ""
 echo ExportChange -a -i 1 CraftingCost/Array/1 ""
 echo ExportChange -a -i 1 CraftingCost/Array/1 ""
 
-echo ExportChange -r -i 1 CraftingCost/Array/1/0/ObjectIndex/0 "RES_CARVED_Bismor 0"
-echo ExportChange -r -i 1 CraftingCost/Array/1/0/Float32/0 %CostBismor%
-echo ExportChange -r -i 1 CraftingCost/Array/1/1/ObjectIndex/0 "RES_CARVED_Magnite 0"
-echo ExportChange -r -i 1 CraftingCost/Array/1/1/Float32/0 %CostMagnite%
-echo ExportChange -r -i 1 CraftingCost/Array/1/2/ObjectIndex/0 "RES_CARVED_Umanite 0"
-echo ExportChange -r -i 1 CraftingCost/Array/1/2/Float32/0 %CostUmanite%
-echo ExportChange -r -i 1 CraftingCost/Array/1/3/ObjectIndex/0 "RES_EMBED_Enor 0"
-echo ExportChange -r -i 1 CraftingCost/Array/1/3/Float32/0 %CostEnorPearl%
-echo ExportChange -r -i 1 CraftingCost/Array/1/4/ObjectIndex/0 "RES_EMBED_Jadiz 0"
-echo ExportChange -r -i 1 CraftingCost/Array/1/4/Float32/0 %CostJadiz%
-echo ExportChange -r -i 1 CraftingCost/Array/1/5/ObjectIndex/0 "RES_VEIN_Croppa 0"
-echo ExportChange -r -i 1 CraftingCost/Array/1/5/Float32/0 %CostCroppa%
+IF %CostBismor%!=0 (
+	echo ExportChange -r -i 1 CraftingCost/Array/1/0/ObjectIndex/0 "RES_CARVED_Bismor 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/0/Float32/0 %CostBismor%
+)
+IF %CostMagnite%!=0 (
+	echo ExportChange -r -i 1 CraftingCost/Array/1/1/ObjectIndex/0 "RES_CARVED_Magnite 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/1/Float32/0 %CostMagnite%
+)
+IF %CostUmanite%!=0 (
+	echo ExportChange -r -i 1 CraftingCost/Array/1/2/ObjectIndex/0 "RES_CARVED_Umanite 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/2/Float32/0 %CostUmanite%
+)
+IF %CostEnorPearl%!=0 (
+	echo ExportChange -r -i 1 CraftingCost/Array/1/3/ObjectIndex/0 "RES_EMBED_Enor 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/3/Float32/0 %CostEnorPearl%
+)
+IF %CostJadiz%!=0 (
+	echo ExportChange -r -i 1 CraftingCost/Array/1/4/ObjectIndex/0 "RES_EMBED_Jadiz 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/4/Float32/0 %CostJadiz%
+)
+IF %CostCroppa%!=0 (
+	echo ExportChange -r -i 1 CraftingCost/Array/1/5/ObjectIndex/0 "RES_VEIN_Croppa 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/5/Float32/0 %CostCroppa%
+)
 
 
 
