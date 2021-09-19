@@ -37,3 +37,11 @@ SET UserVisibleDescBUID=
 
 SET ProgressionGUID=
 SET PJProgressionGUID=
+
+SET CraftingCreditsCost=
+SET CostBismor=
+SET CostMagnite=
+SET CostUmanite=
+SET CostEnorPearl=
+SET CostJadiz=
+SET CostCroppa=

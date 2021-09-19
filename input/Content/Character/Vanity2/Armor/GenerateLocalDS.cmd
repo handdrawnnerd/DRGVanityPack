@@ -50,6 +50,80 @@ echo ExportChange -r -i 1 ItemDescription/TextProperty/0/46/SPNTS/0 "%UserVisibl
 
 echo ExportChange -r -i 1 SaveGameID/GUID/1 %ProgressionGUID%
 
+
+echo Name -a CraftingCost
+echo Name -a MapProperty
+
+echo Name -a CarvedResourceData
+echo Name -a GemResourceData
+echo Name -a VeinResourceData
+
+echo Name -a /Game/GameElements/Resources/Carved/Bismor/RES_CARVED_Bismor
+echo Name -a RES_CARVED_Bismor
+echo Name -a /Game/GameElements/Resources/Carved/Magnite/RES_CARVED_Magnite
+echo Name -a RES_CARVED_Magnite
+echo Name -a /Game/GameElements/Resources/Carved/Umanite/RES_CARVED_Umanite
+echo Name -a RES_CARVED_Umanite
+echo Name -a /Game/GameElements/Resources/Embedded/EnorPearl/RES_EMBED_Enor
+echo Name -a RES_EMBED_Enor
+echo Name -a /Game/GameElements/Resources/Embedded/Gems/RES_EMBED_Jadiz
+echo Name -a RES_EMBED_Jadiz
+echo Name -a /Game/GameElements/Resources/Veins/RES_VEIN_Croppa
+echo Name -a RES_VEIN_Croppa
+
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Carved/Bismor/RES_CARVED_Bismor 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Carved/Magnite/RES_CARVED_Magnite 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Carved/Umanite/RES_CARVED_Umanite 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Embedded/EnorPearl/RES_EMBED_Enor 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Embedded/Gems/RES_EMBED_Jadiz 0
+echo Import -a /Script/CoreUObject Package -i 0 /Game/GameElements/Resources/Veins/RES_VEIN_Croppa 0
+
+echo Import -a /Script/FSD CarvedResourceData /Game/GameElements/Resources/Carved/Bismor/RES_CARVED_Bismor 0 RES_CARVED_Bismor 0
+echo Import -a /Script/FSD CarvedResourceData /Game/GameElements/Resources/Carved/Magnite/RES_CARVED_Magnite 0 RES_CARVED_Magnite 0
+echo Import -a /Script/FSD CarvedResourceData /Game/GameElements/Resources/Carved/Umanite/RES_CARVED_Umanite 0 RES_CARVED_Umanite 0
+echo Import -a /Script/FSD GemResourceData /Game/GameElements/Resources/Embedded/EnorPearl/RES_EMBED_Enor 0 RES_EMBED_Enor 0
+echo Import -a /Script/FSD GemResourceData /Game/GameElements/Resources/Embedded/Gems/RES_EMBED_Jadiz 0 RES_EMBED_Jadiz 0
+echo Import -a /Script/FSD VeinResourceData /Game/GameElements/Resources/Veins/RES_VEIN_Croppa 0 RES_VEIN_Croppa 0
+
+
+echo ExportChange -r -i 1 CraftingCreditsCost/Int32/0 %CraftingCreditsCost%
+
+echo ExportChange -a -i 1 "" "CraftingCost MapProperty ObjectProperty FloatProperty"
+
+
+IF %CostBismor% NEQ 0 (
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_CARVED_Bismor 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostBismor%
+)
+IF %CostMagnite% NEQ 0 (
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_CARVED_Magnite 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostMagnite%
+)
+IF %CostUmanite% NEQ 0 (	
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_CARVED_Umanite 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostUmanite%
+)
+IF %CostEnorPearl% NEQ 0 (
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_EMBED_Enor 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostEnorPearl%
+)
+IF %CostJadiz% NEQ 0 (
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_EMBED_Jadiz 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostJadiz%
+)
+IF %CostCroppa% NEQ 0 (
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_VEIN_Croppa 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostCroppa%
+)
+
+
+
 echo File Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default.uasset
 
 echo Name -r /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_Driller_MK2Default /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default

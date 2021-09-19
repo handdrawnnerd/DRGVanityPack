@@ -31,3 +31,13 @@ echo SET ProgressionGUID=0123456789ABCDEF0123456789ABCDEF
 echo REM The next GUID is used for the default paintjob generated for the new armour
 
 echo SET PJProgressionGUID=0123456789ABCDEF0123456789ABCDE0
+
+echo REM Set desired resource costs
+
+echo SET CraftingCreditsCost=1000
+echo SET CostBismor=0
+echo SET CostMagnite=0
+echo SET CostUmanite=0
+echo SET CostEnorPearl=0
+echo SET CostJadiz=0
+echo SET CostCroppa=0

@@ -48,3 +48,13 @@ echo SET UserVisibleDescGUID=0123456789ABCDEF0123456789ABCDEE
 echo REM And a yet another place for a random GUID
 
 echo SET ProgressionGUID=0123456789ABCDEF0123456789ABCDEF
+
+echo REM Set desired resource costs
+
+echo SET CraftingCreditsCost=1000
+echo SET CostBismor=0
+echo SET CostMagnite=0
+echo SET CostUmanite=0
+echo SET CostEnorPearl=0
+echo SET CostJadiz=0
+echo SET CostCroppa=0
