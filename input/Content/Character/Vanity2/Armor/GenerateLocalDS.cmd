@@ -89,36 +89,37 @@ echo Import -a /Script/FSD VeinResourceData /Game/GameElements/Resources/Veins/R
 echo ExportChange -r -i 1 CraftingCreditsCost/Int32/0 %CraftingCreditsCost%
 
 echo ExportChange -a -i 1 "" "CraftingCost MapProperty ObjectProperty FloatProperty"
-echo ExportChange -a -i 1 CraftingCost/Array/1 ""
-echo ExportChange -a -i 1 CraftingCost/Array/1 ""
-echo ExportChange -a -i 1 CraftingCost/Array/1 ""
-echo ExportChange -a -i 1 CraftingCost/Array/1 ""
-echo ExportChange -a -i 1 CraftingCost/Array/1 ""
-echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+
 
 IF %CostBismor% NEQ 0 (
-	echo ExportChange -r -i 1 CraftingCost/Array/1/0/ObjectIndex/0 "RES_CARVED_Bismor 0"
-	echo ExportChange -r -i 1 CraftingCost/Array/1/0/Float32/0 %CostBismor%
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_CARVED_Bismor 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostBismor%
 )
 IF %CostMagnite% NEQ 0 (
-	echo ExportChange -r -i 1 CraftingCost/Array/1/1/ObjectIndex/0 "RES_CARVED_Magnite 0"
-	echo ExportChange -r -i 1 CraftingCost/Array/1/1/Float32/0 %CostMagnite%
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_CARVED_Magnite 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostMagnite%
 )
-IF %CostUmanite% NEQ 0 (
-	echo ExportChange -r -i 1 CraftingCost/Array/1/2/ObjectIndex/0 "RES_CARVED_Umanite 0"
-	echo ExportChange -r -i 1 CraftingCost/Array/1/2/Float32/0 %CostUmanite%
+IF %CostUmanite% NEQ 0 (	
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_CARVED_Umanite 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostUmanite%
 )
 IF %CostEnorPearl% NEQ 0 (
-	echo ExportChange -r -i 1 CraftingCost/Array/1/3/ObjectIndex/0 "RES_EMBED_Enor 0"
-	echo ExportChange -r -i 1 CraftingCost/Array/1/3/Float32/0 %CostEnorPearl%
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_EMBED_Enor 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostEnorPearl%
 )
 IF %CostJadiz% NEQ 0 (
-	echo ExportChange -r -i 1 CraftingCost/Array/1/4/ObjectIndex/0 "RES_EMBED_Jadiz 0"
-	echo ExportChange -r -i 1 CraftingCost/Array/1/4/Float32/0 %CostJadiz%
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_EMBED_Jadiz 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostJadiz%
 )
 IF %CostCroppa% NEQ 0 (
-	echo ExportChange -r -i 1 CraftingCost/Array/1/5/ObjectIndex/0 "RES_VEIN_Croppa 0"
-	echo ExportChange -r -i 1 CraftingCost/Array/1/5/Float32/0 %CostCroppa%
+	echo ExportChange -a -i 1 CraftingCost/Array/1 ""
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/ObjectIndex/0 "RES_VEIN_Croppa 0"
+	echo ExportChange -r -i 1 CraftingCost/Array/1/-1/Float32/0 %CostCroppa%
 )
 
 
