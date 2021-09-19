@@ -50,6 +50,34 @@ echo ExportChange -r -i 1 ItemDescription/TextProperty/0/46/SPNTS/0 "%UserVisibl
 
 echo ExportChange -r -i 1 SaveGameID/GUID/1 %ProgressionGUID%
 
+echo ExportChange -r -i 1 CraftingCreditsCost/Float32/0 %CraftingCreditsCost%
+
+echo Name -a CraftingCost
+echo Name -a MapProperty
+
+echo Name -a CarvedResourceData
+echo Name -a GemResourceData
+echo Name -a VeinResourceData
+
+echo Name -a /Game/GameElements/Resources/Carved/Bismor/RES_CARVED_Bismor
+echo Name -a RES_CARVED_Bismor
+echo Name -a /Game/GameElements/Resources/Carved/Magnite/RES_CARVED_Magnite
+echo Name -a RES_CARVED_Magnite
+echo Name -a /Game/GameElements/Resources/Carved/Umanite/RES_CARVED_Umanite
+echo Name -a RES_CARVED_Umanite
+echo Name -a /Game/GameElements/Resources/Embedded/EnorPearl/RES_EMBED_Enor
+echo Name -a RES_EMBED_Enor
+echo Name -a /Game/GameElements/Resources/Embedded/Gems/RES_EMBED_Jadiz
+echo Name -a RES_EMBED_Jadiz
+echo Name -a /Game/GameElements/Resources/Veins/RES_VEIN_Croppa
+echo Name -a RES_VEIN_Croppa
+
+echo ExportChange -r -i 1 CraftingCreditsCost/Float32/0 %CraftingCreditsCost%
+
+echo ExportChange -a -i 1 "" "CraftingCost MapProperty ObjectProperty FloatProperty"
+
+
+
 echo File Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default.uasset
 
 echo Name -r /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_Driller_MK2Default /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default
