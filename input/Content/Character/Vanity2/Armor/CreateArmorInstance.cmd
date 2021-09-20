@@ -29,6 +29,9 @@ SET ArmorName=
 SET ClassName=
 SET UseBeard=
 
+SET UseMaterialOverride=FALSE
+SET MaterialOverride=
+
 SET UserVisibleName=
 SET UserVisibleDesc=
 

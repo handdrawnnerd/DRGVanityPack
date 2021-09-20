@@ -12,6 +12,12 @@ echo REM Set UseBeard=TRUE to generate armor item with speical mesh override for
 echo REM DO NOT LEAVE THE VALUE BLANK
 echo SET UseBeard=TRUE
 
+echo REM Set to TRUE and type material asset name to use custom material
+echo REM THE MATERIAL MUST BE LOCATED IN THE SAME FOLDER WITH VANITY AND SK FILES
+
+echo SET UseMaterialOverride=FALSE
+echo SET MaterialOverride=
+
 echo REM User-visible names, feel free to use spaces here
 
 echo SET UserVisibleName=Barrel Armor

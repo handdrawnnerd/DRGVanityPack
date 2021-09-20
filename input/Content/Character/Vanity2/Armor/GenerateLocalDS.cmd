@@ -42,6 +42,16 @@ echo Name -r VAN_ArmorDriller_MK2 VAN_%ArmorName%
 echo Name -r /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_Driller_MK2Default /Game/Character/Vanity2/Armor/Paintjobs_ArmorDefaults/VAN_ArmorMat_%ArmorName%_Default
 echo Name -r VAN_ArmorMat_Driller_MK2Default VAN_ArmorMat_%ArmorName%_Default
 
+IF %UseMaterialOverride%==TRUE (
+	echo Name -a MaterialOverride
+	
+	echo Name -a /Game/Character/Vanity2/Headwear/%MaterialOverride%
+	echo Name -a /Game/Character/Vanity2/Headwear/%MaterialOverride%.%MaterialOverride%
+	
+	echo ExportChange -a -i 1 "" "MaterialOverride SoftObjectProperty"
+	echo ExportChange -r -i 1 MaterialOverride/Name/0 "/Game/Character/Vanity2/Headwear/%MaterialOverride%.%MaterialOverride% 0"
+)
+
 echo ExportChange -r -i 1 ItemName/TextProperty/0/9/SPNTS/0 %UserVisibleNameGUID%
 echo ExportChange -r -i 1 ItemName/TextProperty/0/46/SPNTS/0 "%UserVisibleName%"
 
