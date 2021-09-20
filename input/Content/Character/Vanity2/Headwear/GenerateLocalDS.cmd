@@ -12,8 +12,8 @@ echo Name -r /Game/Character/Vanity2/Headwear/VAN_Headwear_CorporateMarine /Game
 echo Name -r VAN_Headwear_CorporateMarine VAN_Headwear_%InternalHatName%
 
 
-echo ExportChange -r -i 1 HeadVanityType/Name/0 "%HeadVanityType% 0"
-echo ExportChange -r -i 1 HeadMesh/Name/0 "%HeadMesh% 0"
+echo Name -r EHeadVanityType::HeadGearOnly_UseArmorMaterial %HeadVanityType%
+echo Name -r ECharacterHeadMesh::ThichNeckOnly %HeadMesh%
 
 echo Name -a HideEyebrows
 echo Name -a HideSideburns
