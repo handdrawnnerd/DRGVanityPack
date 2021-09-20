@@ -30,7 +30,7 @@ echo ExportChange -r -i 1 HideBeard/Bool/0 %HideBeard%
 echo ExportChange -r -i 1 HideAll/Bool/0 %HideAll%
 echo ExportChange -r -i 1 HideHead/Bool/0 %HideHead%
 
-IF UseMaterialOverride==TRUE (
+IF %UseMaterialOverride%==TRUE (
 	echo Name -a MaterialOverride
 	
 	echo Name -a /Game/Character/Vanity2/Headwear/%MaterialOverride%
