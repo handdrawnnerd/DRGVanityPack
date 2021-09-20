@@ -15,14 +15,21 @@ echo REM HeadVanityType::HairAndHeadGear_UseArmorMaterial
 
 echo SET HeadVanityType=EHeadVanityType::HeadGearOnly_UseArmorMaterial
 
-echo REM Set HideBeard=TRUE to generate a hat that will disable beards
-echo REM HideAll works for all the other hair(?)
-echo REM HideHead for head
+echo REM What vanities and meshes should be hidden?
 echo REM Only use TRUE or FALSE
 
+echo SET HideEyebrows=FALSE
+echo SET HideSideburns=FALSE
+echo SET HideMoustache=FALSE
 echo SET HideBeard=TRUE
 echo SET HideAll=TRUE
 echo SET HideHead=TRUE
+
+echo REM Set to TRUE and type material asset name to use custom material
+echo REM THE MATERIAL MUST BE LOCATED IN THE SAME FOLDER WITH VANITY AND SK FILES
+
+echo SET UseMaterialOverride=FALSE
+echo SET MaterialOverride=
 
 echo REM I don't have much idea what following property does
 echo REM But here are the possible values

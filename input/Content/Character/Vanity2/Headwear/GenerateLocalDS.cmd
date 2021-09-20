@@ -15,9 +15,30 @@ echo Name -r VAN_Headwear_CorporateMarine VAN_Headwear_%InternalHatName%
 echo ExportChange -r -i 1 HeadVanityType/Name/0 "%HeadVanityType% 0"
 echo ExportChange -r -i 1 HeadMesh/Name/0 "%HeadMesh% 0"
 
+echo Name -a HideEyebrows
+echo Name -a HideSideburns
+echo Name -a HideMoustache
+
+echo ExportChange -a -i 1 "" "HideEyebrows BoolProperty"
+echo ExportChange -a -i 1 "" "HideSideburns BoolProperty"
+echo ExportChange -a -i 1 "" "HideMoustache BoolProperty"
+
+echo ExportChange -r -i 1 HideEyebrows/Bool/0 %HideEyebrows%
+echo ExportChange -r -i 1 HideSideburns/Bool/0 %HideSideburns%
+echo ExportChange -r -i 1 HideMoustache/Bool/0 %HideMoustache%
 echo ExportChange -r -i 1 HideBeard/Bool/0 %HideBeard%
 echo ExportChange -r -i 1 HideAll/Bool/0 %HideAll%
 echo ExportChange -r -i 1 HideHead/Bool/0 %HideHead%
+
+IF UseMaterialOverride==TRUE (
+	echo Name -a MaterialOverride
+	
+	echo Name -a /Game/Character/Vanity2/Headwear/%MaterialOverride%
+	echo Name -a /Game/Character/Vanity2/Headwear/%MaterialOverride%.%MaterialOverride%
+	
+	echo ExportChange -a -i 1 "" "MaterialOverride SoftObjectProperty"
+	echo ExportChange -r -i 1 MaterialOverride/Name/0 "/Game/Character/Vanity2/Headwear/%MaterialOverride%.%MaterialOverride% 0"
+)
 
 echo ExportChange -r -i 1 ItemName/TextProperty/0/10/SPNTS/0 %UserVisibleNameGUID%
 echo ExportChange -r -i 1 ItemName/TextProperty/0/47/SPNTS/0 "%UserVisibleName%"
