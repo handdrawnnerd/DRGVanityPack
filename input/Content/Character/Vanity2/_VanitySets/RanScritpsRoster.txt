@@ -7,3 +7,9 @@
 .\ArmorMerging_StickmanArmorGunner.ds
 .\ArmorMerging_StickmanArmorScout.ds
 .\HeadwearMerging_BarrelHelmet.ds
+.\ArmorMerging_FridgeArmorDriller.ds
+.\ArmorMerging_FridgeArmorEngineer.ds
+.\ArmorMerging_FridgeArmorGunner.ds
+.\ArmorMerging_FridgeArmorScout.ds
+.\HeadwearMerging_FridgeHelmet.ds
+.\HeadwearMerging_GhastlyGibus.ds
