@@ -1,5 +1,5 @@
 {
   "drgParserPath": "D:\\DRGModding\\DRG_Parser\\DRG Parser\\DeepRockUnpakConverter.exe",
   "autoParseAfterSuccess": false,
-  "enablePatternReadingHeuristica": true
+  "enablePatternReadingHeuristica": false
 }

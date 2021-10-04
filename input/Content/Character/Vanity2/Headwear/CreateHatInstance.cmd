@@ -20,9 +20,15 @@ SET InternalHatName=
 SET HeadVanityType=
 SET HeadMesh=
 
+SET HideEyebrows=
+SET HideSideburns=
+SET HideMoustache=
 SET HideBeard=
 SET HideAll=
 SET HideHead=
+
+SET UseMaterialOverride=FALSE
+SET MaterialOverride=
 
 SET UserVisibleName=
 SET UserVisibleDesc=
@@ -31,3 +37,11 @@ SET UserVisibleNameGUID=
 SET UserVisibleDescBUID=
 
 SET ProgressionGUID=
+
+SET CraftingCreditsCost=
+SET CostBismor=
+SET CostMagnite=
+SET CostUmanite=
+SET CostEnorPearl=
+SET CostJadiz=
+SET CostCroppa=
