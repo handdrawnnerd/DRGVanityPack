@@ -6,3 +6,4 @@
 .\ArmorMerging_StickmanArmorEngineer.ds
 .\ArmorMerging_StickmanArmorGunner.ds
 .\ArmorMerging_StickmanArmorScout.ds
+.\HeadwearMerging_tf2chef.ds
