@@ -29,6 +29,9 @@ SET ArmorName=
 SET ClassName=
 SET UseBeard=
 
+SET UseMaterialOverride=FALSE
+SET MaterialOverride=
+
 SET UserVisibleName=
 SET UserVisibleDesc=
 
@@ -37,3 +40,11 @@ SET UserVisibleDescBUID=
 
 SET ProgressionGUID=
 SET PJProgressionGUID=
+
+SET CraftingCreditsCost=
+SET CostBismor=
+SET CostMagnite=
+SET CostUmanite=
+SET CostEnorPearl=
+SET CostJadiz=
+SET CostCroppa=
