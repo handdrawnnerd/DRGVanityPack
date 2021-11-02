@@ -19,8 +19,12 @@ get a bunch of files created. Then you replace the Skeletal Meshes the way you d
 that for vanilla, but now you replace the generated SK files.
 (Thus you name the meshes in your UE editor the way they are named in generated files.)
 
-You don't need to start new branch for each armor item. Instead you can generate 
-files for one armor, adjust config and generate new.
+You don't need to start new branch for each item. Instead you can generate 
+files for one item, adjust config and generate new.
+
+In order to test your changes, create a new branch from BleedingEdge of your fork,
+merge changes into it and run "AutoMerge.cmd" located in _VanitySets folder. After that
+pack the resulting input folder and go see the results in the game.
 
 Once you feel you made everything needed, create an issue at github, referring that
 your branch awaits for maintainer's actions.
