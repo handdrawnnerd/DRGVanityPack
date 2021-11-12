@@ -2,7 +2,7 @@ Pre-requisite: .Net5 runtime. Make sure you get it for correct OS and architectu
 https://dotnet.microsoft.com/download/dotnet/5.0
 
 Once you created a branch from AutomationCore, run (double-click) CreateConfig.cmd.
-It will create a new file, DVP_DAUM_AUTOMATION_Armour_Generation_config.cmd.
+It will create a new file, DVP_DAUM_AUTOMATION_Eyebrows_Generation_config.cmd.
 This is the "generation config". There you will fill the data in to use for the
 new armor items.
 
@@ -14,13 +14,12 @@ Keep the GUIDs capitalised!
 Avoid GUID collisions! You can only afford using same GUIDs for texts if they are
 absolutely the same.
 
-Once you filled the settings in, double-click CreateArmorInstance.cmd. You should
-get a bunch of files created. Then you replace the Skeletal Meshes the way you did
-that for vanilla, but now you replace the generated SK files.
-(Thus you name the meshes in your UE editor the way they are named in generated files.)
+Once you filled the settings in, double-click CreateEyebrowsInstance.cmd. You should
+get few created with names reflecting your item internal name. Insert Skeletal Meshes the way you
+cooked for this folder with a proper name (starting with SK_Vanity_Eyebrows_).
 
-You don't need to start new branch for each armor item. Instead you can generate 
-files for one armor, adjust config and generate new.
+You don't need to start new branch for each item. Instead you can generate 
+files for one item, adjust config and generate new.
 
 In order to test your changes, create a new branch from BleedingEdge of your fork,
 merge changes into it and run "AutoMerge.cmd" located in _VanitySets folder. After that
