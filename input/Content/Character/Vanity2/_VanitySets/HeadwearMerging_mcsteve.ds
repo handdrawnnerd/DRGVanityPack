@@ -1,0 +1,28 @@
+File VanitySet_Driller.uasset
+Name -a /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve
+Name -a VAN_Headwear_mcsteve
+Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0
+Import -a /Script/FSD HeadVanityItem /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0 VAN_Headwear_mcsteve 0
+ExportChange -a -i 1 HeadItems/Array/0 ""
+ExportChange -r -i 1 HeadItems/Array/0/-1/ObjectIndex/0 "VAN_Headwear_mcsteve 0"
+File VanitySet_Engineer.uasset
+Name -a /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve
+Name -a VAN_Headwear_mcsteve
+Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0
+Import -a /Script/FSD HeadVanityItem /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0 VAN_Headwear_mcsteve 0
+ExportChange -a -i 1 HeadItems/Array/0 ""
+ExportChange -r -i 1 HeadItems/Array/0/-1/ObjectIndex/0 "VAN_Headwear_mcsteve 0"
+File VanitySet_Gunner.uasset
+Name -a /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve
+Name -a VAN_Headwear_mcsteve
+Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0
+Import -a /Script/FSD HeadVanityItem /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0 VAN_Headwear_mcsteve 0
+ExportChange -a -i 1 HeadItems/Array/0 ""
+ExportChange -r -i 1 HeadItems/Array/0/-1/ObjectIndex/0 "VAN_Headwear_mcsteve 0"
+File VanitySet_Scout.uasset
+Name -a /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve
+Name -a VAN_Headwear_mcsteve
+Import -a /Script/CoreUObject Package -i 0 /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0
+Import -a /Script/FSD HeadVanityItem /Game/Character/Vanity2/Headwear/VAN_Headwear_mcsteve 0 VAN_Headwear_mcsteve 0
+ExportChange -a -i 1 HeadItems/Array/0 ""
+ExportChange -r -i 1 HeadItems/Array/0/-1/ObjectIndex/0 "VAN_Headwear_mcsteve 0"
